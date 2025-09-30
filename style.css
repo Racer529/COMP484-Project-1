@@ -1,0 +1,274 @@
+/* style.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fff;
+  color: black;
+}
+
+header {
+  background: #111;
+  color: #fff;
+  padding: 1rem;
+  margin: 0;
+  text-align: center;
+}
+
+h1, h2, h3, p {
+  margin-top: 0; /* remove the extra space above */
+}
+
+header h1 {
+  margin-top: 0;   /* remove the extra space above */
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+nav a.active, nav a:hover {
+  background: #c8102e; /* NASCAR red */
+  border-radius: 5px;
+}
+
+.hero {
+  background:"images/IMG_3186.jpeg"
+  color: black;
+  padding: 5rem 2rem;
+  text-align: center;
+/* Make the hero section full width */
+.hero {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Make the image span the entire screen */
+.hero-image {
+  display: block;
+  width: 100%;     /* fills the whole width of the browser */
+  height: auto;    /* keeps proportions */
+  margin: 0;
+}
+}
+
+main {
+  padding: 2rem;
+}
+
+header h1 {
+  font-size: 3rem;   /* Bigger than the default */
+  font-weight: bold; /* Makes it stand out */
+  text-align: center;
+  color: #0033a0;    /* NASCAR blue */
+}
+
+
+/* Timeline Styling */
+#nascar-history {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+#nascar-history h1 {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  color: #c8102e; /* NASCAR red */
+}
+
+#nascar-history p {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.timeline {
+  list-style: none;
+  padding: 0;
+  border-left: 3px solid #0033a0; /* NASCAR blue */
+  margin-left: 1rem;
+}
+
+.timeline li {
+  margin: 1.5rem 0;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.timeline li::before {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 5px;
+  width: 15px;
+  height: 15px;
+  background: #c8102e;
+  border-radius: 50%;
+}
+
+.timeline .year {
+  font-weight: bold;
+  color: #0033a0;
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+
+textarea {
+  width: 100%;                /* Make it responsive */
+  min-height: 120px;          /* Comfortable typing space */
+  padding: 12px;              /* Breathing room inside */
+  font-size: 1rem;            /* Easy-to-read text */
+  font-family: Arial, sans-serif;
+  border: 2px solid #0033a0;  /* NASCAR blue border */
+  border-radius: 6px;         /* Smooth corners */
+  background-color: #fdfdfd;  /* Clean background */
+  color: #333;                /* Dark text for readability */
+  resize: vertical;           /* Allow vertical resize only */
+  transition: all 0.3s ease;  /* Smooth hover/focus effects */
+}
+
+textarea:focus {
+  outline: none;              /* Remove default glow */
+  border-color: #c8102e;      /* NASCAR red highlight */
+  box-shadow: 0 0 6px rgba(200, 16, 46, 0.5);
+  background-color: #fffef5;  /* Slight highlight on focus */
+}
+
+.img-container {
+  text-align: center;
+}
+
+.img-container img {
+  max-width: 80%;
+  height: auto;
+}
+
+/* Center the video container */
+.video-container {
+  text-align: center;
+}
+/* Row of images */
+.image-row {
+  display: flex;
+  justify-content: center;   /* centers them horizontally */
+  gap: 20px;                 /* space between images */
+}
+
+.image-row img {
+  max-width: 45%;            /* keeps them responsive */
+  height: auto;
+  border-radius: 6px;
+}
+
+/* Table Styling */
+#favorite-drivers table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+#favorite-drivers th {
+  background-color: #0033a0; /* NASCAR blue */
+  color: #fff;
+  padding: 12px;
+  text-align: left;
+  font-size: 1.1rem;
+  border-bottom: 3px solid #c8102e; /* NASCAR red accent */
+}
+
+#favorite-drivers td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+#favorite-drivers tr:hover {
+  background-color: #f9f9f9;
+}
+
+/* Input + Datalist Styling */
+#favorite-drivers input[list] {
+  width: 60%;
+  padding: 8px;
+  border: 2px solid #0033a0;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+#favorite-drivers input[list]:focus {
+  outline: none;
+  border-color: #c8102e;
+  box-shadow: 0 0 6px rgba(200,16,46,0.5);
+}
+
+/* Select List Styling */
+#driver-select {
+  width: 60%;
+  padding: 8px;
+  border: 2px solid #0033a0;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+#driver-select option:hover {
+  background-color: #c8102e;
+  color: #fff;
+}
+
+#nascar-feedback {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 2px solid #0033a0; /* NASCAR blue */
+  border-radius: 5px;
+  resize: vertical;
+}
+
+#char-count {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 0.3rem;
+
+
+}
+/* In favorites, shows the images in a row and makes them bigger and fits the page */
+.image-row {
+  display: flex;
+  justify-content: center;   /* centers the row */
+  gap: 20px;                 /* space between photos */
+  margin-top: 1.5rem;
+}
+
+.image-row img {
+  flex: 1;                   /* each image grows equally */
+  max-width: 100%;           /* prevents overflow */
+  height: auto;              /* keeps proportions */
+  border-radius: 8px;
+  object-fit: cover;
+  
+  /*  Make them bigger */
+  max-width: 400px;          /* increase this number for larger images */
+}
+footer {
+  background: #111;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}

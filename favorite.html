@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Favorites</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>My Favorites</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="how.html">How</a></li>
+        <li><a href="favorite.html" class="active">My Favorites</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <article>
+      <h1>Favorites</h1>
+      <p>Below is where I list some of my favorite drivers, schemes and conincidently my favorite teams in NASCAR.</p>
+    </article>
+
+    <section id="favorite-drivers">
+  <h1>My Favorite NASCAR Drivers and Teams</h1>
+
+  <!-- Table with header as it showcases my table of favorite drivers and teams -->
+  <table border="1" cellpadding="8" cellspacing="0">
+    <tr>
+      <th>Driver Name</th>
+      <th>Team</th>
+      <th>Car Number</th>
+       </tr>
+        <tr>
+      <td>Tyler Reddick</td>
+      <td>23XI Racing</td>
+      <td>45</td>
+       </tr>
+      <tr>
+      <td>Denny Hamlin</td>
+      <td>Joe Gibbs Racing</td>
+      <td>11</td>
+        </tr>
+        <tr>
+      <td>Kyle Larson</td>
+      <td>Hendrick Motorsports</td>
+      <td>5</td>
+    </tr>
+        <tr>
+      <td>Bubba Wallace</td>
+      <td>23XI Racing</td>
+      <td>23</td>
+    </tr>
+        <tr>
+      <td>Connor Zilisch</td>
+      <td>JR Motorsports (Xfinity)</td>
+      <td>88</td>
+      </td>
+  </table>
+
+  <br>
+
+  <!-- Input with datalist -->
+  <label for="driver-choice">Pick your favorite driver:</label>
+  <input list="drivers" id="driver-choice" name="driver-choice" placeholder="Start typing...">
+
+  <datalist id="drivers">
+    <option value="Tyler Reddick">
+    <option value="Denny Hamlin">
+    <option value="Kyle Larson">
+    <option value="Bubba Wallace">
+    <option value="Connor Zilisch">
+  </datalist>
+
+  <br><br>
+
+  <!-- Select with size -->
+  <label for="driver-select">Or select from the list:</label><br>
+  <select id="driver-select" name="driver-select" size="5">
+    <option>Tyler Reddick</option>
+    <option>Denny Hamlin</option>
+    <option>Kyle Larson</option>
+    <option>Bubba Wallace</option>
+    <option>Connor Zilisch</option>
+  </select>
+<h1>Images of my some of my favorite drivers</h1>
+<div class="image-row">
+  <img src="images/IMG_4988.jpeg" alt="45">
+  <img src="images/IMG_6446.jpeg" alt="11">
+  <img src="images/IMG_6437.jpeg" alt="88">
+</div>
+
+<h1>Images of my some of my favorite schemes</h1>
+<div class="image-row">
+  <img src="images/IMG_3186.jpeg" alt="14">
+  <img src="images/IMG_6061.jpeg" alt="48">
+  <img src="images/IMG_2699.jpeg" alt="17">
+</div>
+</section>
+  </main>
+
+<!-- <textarea> Gives the reader the ability to interact with the site by commenting
+  <maxlength> To limit how much can be typed -->
+<section id="feedback">
+  <h2>Share Your NASCAR Thoughts</h2>
+  <form>
+    <label for="nascar-feedback">
+      What do you your favorite NASCAR drivers and teams? Tell us below. (200 characters max)
+    </label><br>
+
+    <!-- Textarea with wrap + maxlength -->
+    <textarea id="nascar-feedback" 
+              name="nascar-feedback" 
+              rows="5" cols="50" 
+              maxlength="200" 
+              wrap="soft"
+              placeholder="Type your response here..."></textarea>
+
+    <!-- Character counter -->
+    <p id="char-count">200 characters remaining</p>
+
+    <button type="submit">Submit</button>
+  </form>
+</section>
+
+  <footer>
+    <p>&copy; COMP484 Project #1</p>
+  </footer>
+</body>
+</html>
